@@ -1,0 +1,413 @@
+html,body{
+  height:100%;
+  background:white;
+}                                                               /* colori:   blu: #002677   */
+                                                                /*  grigio chiaro: #D9D9D6   */
+                                                                /*   grigio scuro: #25282A    */
+                                                                /*     ciano: #199BFC         */
+
+/*header per login e registrazione*/
+
+.header{
+  height:10%;
+  padding: 2px 10px;
+  background-color: white;
+  text-align: center;
+  font-family:'Roboto', sans-serif;
+  color: #002677;
+  font-size: 13px;
+}
+.header i{ float: left;  font-size: 35px; }
+
+
+/*   Box con all'interno tutti i form   */
+
+
+.box{
+
+  min-height: 90%;
+  background: white;
+  max-width: 100%;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-position:center;
+  position:relative;
+  font-family:'Roboto', sans-serif;
+  text-align: center;
+  box-shadow: inset 0px 1px 5px 0px black;
+  overflow: hidden;
+  color: #002677;
+}
+.box input#firstinput { margin-top: 70px;}          /* distanza tra header e input */
+
+.box input[type='text'], .box input[type='Password'], .box input[type="email"]{
+
+  font-family: "Roboto" , sans-serif;
+  text-align: center;
+  width: 90%;
+  height: 50px;
+  margin-bottom: 20px;
+  border-radius:1px;
+  background: #D9D9D6;
+  height: 40px;
+  font-size: 17px;
+  color: #25282A;
+  border:#25282A;
+}
+.box input:focus[type='text'], .box input:focus[type="email"], .box input:focus[type='Password']{
+
+   background: white;
+   color: #25282A;
+   outline-color: #25282A;
+}
+
+
+/*   Bottoni per confermare   */
+
+
+.button, .box input[type="submit"]{
+  display: inline-block;
+  background: #fff;
+  margin: 13px;
+  border-radius:1px;
+  text-decoration: none;
+  position:relative;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  line-height: 50px;
+  text-align: center;
+  font-size: 16px;
+}
+.box input[type="submit"]{
+
+   line-height: 45px;
+   background: #002677;
+   opacity: none;
+   color:white;
+   box-shadow: none;
+}
+
+a#aut.button, a#login.button{
+    background:#002677;
+    color:white;
+    font-family:'Roboto', sans-serif
+}
+a#pass.button, a#iscriviti.button{
+    background: white;
+    color: #002677;
+    font-family: 'Roboto', sans-serif;
+}
+a#login.button{
+  margin-top:7%;
+  margin-bottom:0;
+  border-color: #002677;
+}
+
+ /*   Container per indice e decisioni con filtri   */
+
+.container{
+  height:100%;
+	background-image: url("decison.jpg");
+  max-width: 100%;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-position:center;
+	position:relative;
+  font-family:'Roboto', sans-serif;
+}
+.container_filter{ background: #000; width:100%; height:100%; position: absolute; z-index: 0; opacity: 0.5; }
+.container_caption{ display: table; height: 100%; width:100%; position: relative; z-index:1;}
+.container_caption_copy{ display: table-cell; vertical-align: middle; text-align: center; color:#fff; }
+
+.cover--single{height: 50%}
+.cover--single h1{font-size: 42px;}
+.container p{ font-size: 20px;}
+
+.index_container{
+   height: 75%;
+   background-image: url("index.jpg");
+   max-width: 100%;
+ 	 background-size: cover;
+ 	 -o-background-size: cover;
+   -moz-background-size: cover;
+   background-position:center;
+ 	 position:relative;
+   font-family:'Roboto', sans-serif;
+ }
+
+
+/* logo unige-unigo */
+
+
+.logo{
+  position:absolute;
+  left:30%;
+  z-index:1;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color:white;
+  width:40%;
+  margin-top: 20px;
+}
+.logo h1{ margin-bottom:2px; font-size: 40px;}
+.logo h2{ margin-top: 2px;}
+
+
+/* footer  */
+
+
+.footer{
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+  font-family:'Roboto', sans-serif;
+  color: #002677;
+}
+ul#menu {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align:center;
+}
+ul#menu li {
+  line-height: 80px;
+  height: 100%;
+  width: 20%;
+  margin:0;
+  padding:0;
+  text-align: center;
+  float: left; /* elementi su singola riga */
+}
+
+ul#menu li i.material-icons{
+  font-size: 27px;
+  color: #25282A;
+}
+
+ul#menu li.active i.material-icons, ul#menu li:hover {
+   color:#002677;
+   font-size: 33px;
+  }
+
+
+/* form autista e passeggero */
+
+
+.text-box h1{
+  text-align: left;
+  font-size:30px;
+  margin-left:10%;
+  color:#002677;
+}
+.text-box{
+  margin-top:5%;
+}
+.date-person{
+  margin-top: 5px;
+  margin-bottom: 15px;
+  height: 60px;
+  color:#002677;
+  font-size: 18px;
+}
+.date-person input[type="date"]{
+  width: 50%;
+  height: 100%;
+  text-align: left;
+  border: white;
+  color:#002677;
+  margin-left: 10px;
+}
+
+.date-person input[type="number"]{
+  border:white;
+  color:#002677;
+  text-align: center;
+
+}
+
+.box hr {
+  text-align: center;
+  width: 95%;
+}
+
+.radio-button{
+  width:100%;
+  line-height:50px;
+  text-align: right;
+}
+
+.radio-button i.material-icons{
+  font-size:40px;
+  margin-right: 10%;
+  color:#002677;
+}
+
+/*  Cambiare i bottoni radio */
+
+.radio-button input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.radio-button input[type='radio']:after {
+    width: 14px;
+    height: 14px;
+    border-radius: 15px;
+    top: -6px;
+    left: -1px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid black;
+}
+.radio-button input[type='radio']:checked:after {
+    width: 14px;
+    height: 14px;
+    border-radius: 15px;
+    top: -6px;
+    left: -1px;
+    position: relative;
+    background-color: #002677;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid black;
+}
+
+/*   Profilo  */
+
+
+.foto{
+    text-align: center;
+    -moz-border-radius: 180px;
+    -webkit-border-radius: 180px;
+    border-radius: 180px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+.box img{
+  -moz-border-radius: 180px;
+  -webkit-border-radius: 180px;
+  border-radius: 180px;
+  max-width: 96%;
+  height: auto;
+}
+
+.box h3{font-size: 25px;}
+.box p{ color:#25282A;}
+.box a{text-decoration: none;}
+.box h4{font-size:19px;}
+
+.modifica{
+  width: 90%;
+  height: 5%;
+  background-color: white;
+  text-align: center;
+  font-family:'Roboto', sans-serif;
+  color: #002677;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+
+}
+.modifica button{
+  width: 50%;
+  height: 100%;
+  float: left;
+  border-color: #D9D9D6;
+  color:#D9D9D6;
+  background-color:white;
+  text-align: left;
+}
+.modifica button.active{
+  border: 2px solid #002677;
+  color: #002677;
+}
+#modifica-form.form{ margin-top: 40px; }
+
+
+/* Tabella risultati  */
+
+table {
+    width: 100%;
+    overflow:auto;
+}
+table thead tr{
+    display: none;
+}
+
+table tbody tr {
+
+    border: 1px solid #002677;
+    display: block;
+    margin: 1em;
+    color: #002677;
+}
+
+table tbody tr td {
+    padding: 0.4em 1em;
+    text-align: right;
+    display: block;
+    width: block;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+table tbody tr td[data-label="#"] {
+    display: none;
+}
+
+table tbody tr td[data-label]:before {
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+table tbody tr td.numeric {
+    text-align: left;
+
+}
+
+table tbody td[id="name"]{
+  font-size:17px;
+  font-weight: bold;
+}
+
+table tbody td button{
+  line-height: 23px;
+  width: 80px;
+  height: 27px;
+  margin-left:20%;
+  background: #002677;
+  color: white;
+  border:1.2px solid #002677;
+  font-size: 14px;
+  font-weight: 20;
+}
+
+table tbody td img{
+  -moz-border-radius: 180px;
+  -webkit-border-radius: 180px;
+  border-radius: 180px;
+  width:30px;
+  height:30px;
+  margin:auto;
+}

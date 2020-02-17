@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+   	<title>index</title>
+   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+    <link rel="stylesheet" href="stile.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+<body>
+
+ <div class="header">
+
+   <h1><a href="index.html" id="back"><i class="material-icons">arrow_back_ios</i></a>Iscriviti</h1>
+
+ </div>
+
+ <div class="box">
+
+  <form class="form" method="post" onsubmit="return Form(this);" action="registration.php">
+
+    <input type="text" id='firstinput' name="firstname" placeholder="nome" required>
+    <input type="text" name="cognome" placeholder="lastname" required>
+    <input type="email" name="email" placeholder="email" required>
+    <input type="text" name='matricola' placeholder="numero matricola">
+    <input type="password" name="pass" placeholder="password" required>
+    <input type="password" name="confirm" placeholder=" conferma password" required>
+    <input type="submit" name="Submit" value="Submit">
+
+   </form>
+
+ </div>
+
+<script>
+
+function Form(form){
+
+  var confirm = form.confirm.value;
+  var password = form.password.value;
+
+ if (password != confirm) {
+   alert("La password confermata è diversa da quella scelta");
+   form.confirm.focus();
+   form.confirm.select();
+   return false;
+  }
+return true;
+}
+
+</script>
+
+  </body>
+</html>
