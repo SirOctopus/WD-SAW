@@ -83,7 +83,7 @@ session_start();
 
    <br>
 
-    <h4><a href="search.php">Cerca utenti</a></h4>
+    <h4><a href="ricerca.php">Cerca utenti</a></h4>
 
 
 

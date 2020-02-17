@@ -83,7 +83,7 @@ session_start();
      <li><a href="passeggero.php"><i class="material-icons">search</i></a></li>
      <li><a href="allresult.php"><i class="material-icons">import_contacts</i></a></li>
      <li><a href="#"><i class="material-icons">chat</i></a></li>
-     <li><a href="profilo.php"><i class="material-icons">perm_identity</i></a></li>
+     <li><a href="show_profile.php"><i class="material-icons">perm_identity</i></a></li>
    </ul>
 
 </div>   <!-- footer -->

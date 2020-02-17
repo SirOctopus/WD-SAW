@@ -39,7 +39,6 @@ session_start();
           while($row = mysqli_fetch_assoc($query)) {
             $first_name = $row["nome"];
             $last_name = $row["cognome"];
-            $email = $row["email"];
             $foto = $row["foto"];
             $auto = $row["auto"];
 
